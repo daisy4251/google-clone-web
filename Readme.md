@@ -4,16 +4,16 @@
 
 ## 1. CSS 구조 파악
 
-![구조 파악](image.png)
+![구조 파악](image/image.png)
 
 ## 2. CSS 구조 확인
 
-![구조 확인](image-1.png)
+![구조 확인](image/image-1.png)
 
 ## 3. 완료 모습
 
-![html, css로만 구현](image-2.png)
-![모바일 구현 확인](image-3.png)
+![html, css로만 구현](image/image-2.png)
+![모바일 구현 확인](image/image-3.gif)
 
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
