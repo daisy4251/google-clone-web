@@ -1,0 +1,264 @@
+/* 공통 */
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* bottom이 하단으로 내려가게끔 flex처리 */
+	position: relative;
+	/* 기준점 */
+	margin: 0;
+	height: 100vh;
+	/* 어느 기준에서도 전체 화면으로 보여야 함 */
+	overflow: hidden;
+	color: #202124;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif, 'Roboto';
+}
+
+a {
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* 공통 div */
+
+.inner {
+	width: 95%;
+	height: 100%;
+	/* 가운데 정렬 */
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* header */
+header {
+	width: 100%;
+	flex-grow: 1;
+	height: 60px;
+}
+
+header > .inner {
+	display: flex;
+	/* div.inner에 flext를 줌으로써 .info 와 nav 위치 지정 */
+	height: 60px;
+	/* background-color: #dedede; */
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .info {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+header .nav {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+header .nav .grid,
+header .nav .profile {
+	width: 38px;
+	height: 38px;
+}
+
+header .nav .grid i,
+header .nav .profile i {
+	color: #202124;
+}
+
+header .nav .grid > i {
+	padding-top: 12px;
+	font-size: 18px;
+}
+
+header .nav .profile > i {
+	padding-top: 8px;
+	font-size: 24px;
+}
+
+/* icon hover */
+header .nav .grid:hover,
+header .nav .profile:hover {
+	width: 38px;
+	width: 38px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* main */
+main {
+	width: 100%;
+	flex-grow: 4;
+}
+
+main img {
+	display: block;
+	margin: 80px auto 20px;
+	width: 272px;
+	height: 92px;
+}
+
+main .input-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 584px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0 1%;
+	border: 1px solid #dfe1e5;
+	border-radius: 24px;
+	box-sizing: border-box;
+	background-color: #fbbc05;
+	gap: 2%;
+}
+
+main .input-area input {
+	flex-grow: 1;
+	outline: none;
+	border: 0;
+	background: none;
+}
+
+main .input-area:hover {
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+	transition: 0.1s;
+}
+
+main .input-area i {
+	margin-right: 12px;
+
+	color: #5f6368;
+	font-size: 18px;
+}
+
+main .input-area i:last-child {
+	margin: 0;
+}
+
+main i {
+	cursor: pointer;
+}
+
+main .input-area i:hover {
+	color: #222;
+}
+
+main .button-area {
+	margin-top: 20px;
+}
+
+main .button-area button {
+	padding: 0 16px;
+	margin: 11px 4px;
+	height: 36px;
+	color: #3c4043;
+
+	background-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+	border-radius: 4px;
+
+	cursor: pointer;
+}
+
+main .button-area button:hover {
+	box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+	background-color: #f8f9fa;
+	border: 1px solid #dadce0;
+	color: #202124;
+}
+
+/* footer */
+footer {
+	width: 100%;
+	position: relative;
+	flex-grow: 1;
+	height: 60px;
+	background-color: #f2f2f2;
+}
+
+footer .section-1 {
+	display: flex;
+	padding: 5px 0;
+	border-bottom: 1px solid #dadce0;
+}
+
+footer .section-1 h1 {
+	color: #000;
+	text-align: left;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+footer .section-2 {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+footer .section-2 a {
+	margin-right: 12px;
+}
+
+footer .section-2 a:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 720px) {
+	main .input-area {
+		width: 400px;
+	}
+}
+
+@media (max-width: 540px) {
+	header .info,
+	header .nav .g-mail,
+	header .nav .g-image {
+		display: none;
+	}
+
+	main {
+		flex-grow: 3;
+	}
+
+	main .input-area {
+		width: 300px;
+		/* padding: 0 3%; */
+	}
+
+	footer {
+		flex-grow: 2;
+	}
+
+	footer .footer-nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 320px) {
+	main .input-area {
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+	}
+	main .input-area .icon-search {
+		margin: 0 auto;
+	}
+	main .input-area input {
+		display: none;
+	}
+	main .icon-etc {
+		display: none;
+	}
+}
