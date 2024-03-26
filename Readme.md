@@ -13,7 +13,7 @@
 ## 3. 완료 모습
 
 ![html, css로만 구현](image-2.png)
-![alt text](image-3.png)
+![모바일 구현 확인](image-3.png)
 
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
