@@ -17,7 +17,9 @@
 
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
-- 초기 구현은 <a href="(https://d01c67be-98c7-416e-ab23-dce592f099ce-00-2souyyah294vt.sisko.repl.co/" tite="Replit 이동" target="_blank">Replit</a> 또는 <a href="(https://teal-catcher-309.notion.site/230110-230111-Google-bede8e5927f8483d873a2f16147f378a?pvs=74" tite="Notion 이동" target="_blank">Notion</a> 참조
+- 초기 구현은
+  [Replit](https://d01c67be-98c7-416e-ab23-dce592f099ce-00-2souyyah294vt.sisko.repl.co/) 또는
+  [Notion](https://teal-catcher-309.notion.site/230110-230111-Google-bede8e5927f8483d873a2f16147f378a?pvs=74) 참조
 
 ```css
 @media (max-width: 720px) {
@@ -101,5 +103,4 @@
 
 ### Icon
 
-무난한
-<a href="(https://fontawesome.com/" tite="fontawsome 이동" target="_blank">Font Awsome</a> 사용
+무난한 [Font Awsome](https://fontawesome.com/) 사용
