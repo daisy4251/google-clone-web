@@ -1,6 +1,6 @@
 # 230110-230111 Google 클론 코딩
 
----
+[Google 클론 코딩 사이트](https://lively-chebakia-aca1a4.netlify.app/)
 
 ## 1. CSS 구조 파악
 
@@ -14,6 +14,8 @@
 
 ![html, css로만 구현](image/image-2.png)
 ![모바일 구현](https://github.com/daisy4251/google-clone-web/assets/165018586/71296512-164a-48c1-b8aa-f8096e070c1b)
+
+---
 
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
